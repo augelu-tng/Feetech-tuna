@@ -1,11 +1,4 @@
-import sys
-import os
-
-cd = os.path.dirname(__file__)
-scservo_path = os.path.join(cd, 'SCServo_Python')
-sys.path.append(scservo_path)
-
-from scservo_sdk import *
+from .SCServo_Python.scservo_sdk import *
 
 
 servoRegs = [
@@ -186,4 +179,3 @@ class FeetechTuna:
         self.packetHandler.LockEprom(servoId)
         print("EEPROM locked")
             
-

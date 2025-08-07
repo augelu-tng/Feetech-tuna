@@ -167,6 +167,3 @@ while True:
 tuna.closeSerialPort()
 print("Serial port closed")
 print("Exiting...")
-
-
-
